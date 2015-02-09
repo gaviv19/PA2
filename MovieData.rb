@@ -64,32 +64,47 @@ end
 
 
 
+
+#puts "\nHi! Welcome to the movies database program.\n\nPlease enter the the path for the database file:\n"
+movieData = MovieData.new("/Users/avivgl/Dropbox/cosi105b_AvivGlick/movies-2/ml-100k/u1.base", "/Users/avivgl/Dropbox/cosi105b_AvivGlick/movies-2/ml-100k/u1.test") ##{$stdin.gets.chomp}
+##puts movieData.rating(1, 10)
+##puts movieData.movies(1)
+##puts movieData.viewers(647)
+##puts movieData.predict(1, 10)
+yoo = movieData.run_test(20000)
+##puts movieData.movies(1)
+##puts movieData.rating(1,272)
+##puts yoo.to_a
+puts "average prediction error #{yoo.mean}"
+puts "root mean square error of the prediction: #{yoo.rms}"
+puts "standard deviation of the error: #{yoo.stddev}"
+
 ################----HERE ENDS CLASS MovieDATA----################
 
 
 
-puts "\nHi! Welcome to the movies database program.\n\nPlease enter the path for the training set file:\n"
-training_set = "#{$stdin.gets.chomp}"
-puts "\nPlease enter the path for the test set file:\n"
-test_set = "#{$stdin.gets.chomp}"
-movieData = MovieData.new(training_set, test_set)
-while true
-  puts "\nPlease enter the number of ratings you wish to test, or press enter to continue: "
-  k = "#{$stdin.gets.chomp}"
-  puts "Calculating... please wait."
-  if k == ""
-    test = movieData.run_test() 
-  else
-    test = movieData.run_test(k.to_i)
-  end
-  puts "average prediction error: #{test.mean}"
-  puts "root mean square error of the prediction: #{test.rms}"
-  puts "standard deviation of the error: #{test.stddev}"
-  puts "\nWould you like to print the predictions in the form [user, movie, rating, predicted rating]? y/n: "
-  k = "#{$stdin.gets.chomp}"
-  if k == "y"
-    puts "#{test.to_a}"
-  end
-  puts "Would you like to exit? y/n"    
-  exit(0) if "#{$stdin.gets.chomp}" == "y"
-end
+#puts "\nHi! Welcome to the movies database program.\n\nPlease enter the path for the training set file:\n"
+#training_set = "#{$stdin.gets.chomp}"
+#puts "\nPlease enter the path for the test set file:\n"
+#test_set = "#{$stdin.gets.chomp}"
+#movieData = MovieData.new(training_set, test_set)
+#while true
+#  puts "\nPlease enter the number of ratings you wish to test, or press enter to continue: "
+#  k = "#{$stdin.gets.chomp}"
+#  puts "Calculating... please wait."
+#  if k == ""
+#    test = movieData.run_test() 
+#  else
+#    test = movieData.run_test(k.to_i)
+#  end
+#  puts "average prediction error: #{test.mean}"
+#  puts "root mean square error of the prediction: #{test.rms}"
+#  puts "standard deviation of the error: #{test.stddev}"
+#  puts "\nWould you like to print the predictions in the form [user, movie, rating, predicted rating]? y/n: "
+#  k = "#{$stdin.gets.chomp}"
+#  if k == "y"
+#    puts "#{test.to_a}"
+#  end
+#  puts "Would you like to exit? y/n"    
+#  exit(0) if "#{$stdin.gets.chomp}" == "y"
+#end

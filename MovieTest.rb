@@ -25,7 +25,7 @@ class MovieTest
   # returns the standard deviation of the prediction error
   def stddev()
     meanPredictionError = mean
-    diffSquare = @list.collect {|item| (item[:prediction] - meanPredictionError) ** 2}
+    diffSquare = @list.collect {|item| ((item[:prediction] - item[:rating]) - meanPredictionError) ** 2}
     Math.sqrt(sum(diffSquare) / (diffSquare.length - 1))
   end
 
