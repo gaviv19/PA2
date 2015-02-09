@@ -46,21 +46,10 @@ class MovieData
     if @testSet != nil
       aveUserRating = @testSet.average(@testSet.allUsersHash["#{u}"].values) #returns the average rating u gave all movies
       popularity = @testSet.popularity(m)
-      #popularity + aveUserRating*0.01
-      #mostSimilarUserRating = findSimilarUserRating(u, m) 
-      #mostSimilarUserRating == -1 ? popularity + aveUserRating*0.01  : mostSimilarUserRating
       popularity + aveUserRating*0.01
     end
   end
 
-  def findSimilarUserRating (u, m)
-    @testSet.most_similar(u).each do |user|
-      break if user[1] < 4
-      mostSimilarUserRating = rating(user[0], m)
-      return mostSimilarUserRating.to_i if mostSimilarUserRating != 0
-    end
-    return -1
-  end
 
   # runs the predict(u, m) method on the first k ratings in the Test set, and
   # returns a MovieTest object containing the results. (Parameter k is optional, and if omitted, all of the tests will run.)
@@ -80,12 +69,12 @@ end
 
 
 #puts "\nHi! Welcome to the movies database program.\n\nPlease enter the the path for the database file:\n"
-#movieData = MovieData.new("/Users/avivgl/Dropbox/cosi105b_AvivGlick/movies-2/u1.base", "/Users/avivgl/Dropbox/cosi105b_AvivGlick/movies-2/u1.test") ##{$stdin.gets.chomp}
+movieData = MovieData.new("/Users/avivgl/Dropbox/cosi105b_AvivGlick/movies-2/u1.base", "/Users/avivgl/Dropbox/cosi105b_AvivGlick/movies-2/u1.test") ##{$stdin.gets.chomp}
 ##puts movieData.rating(1, 10)
 ##puts movieData.movies(1)
 ##puts movieData.viewers(647)
 ##puts movieData.predict(1, 10)
-yoo = movieData.run_test(100)
+yoo = movieData.run_test()
 ##puts movieData.movies(1)
 ##puts movieData.rating(1,272)
 ##puts yoo.to_a

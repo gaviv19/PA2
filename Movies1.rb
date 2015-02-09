@@ -93,9 +93,10 @@ class Movies1
     find_similarity(user1Hash, user2Hash)
   end
 
-  # returns the similary value (between 0 - 4) of two users, based on the average similairy value between
-  # any two movies both users have seen. If the differences between the ratings are 4, 3, 2, 1, 0, the 
-  # added value for each is 0, 1, 2, 3, 4 respectively, so the higher the value, the greater the similarity.
+  # returns the similary value of two users, based on the average similairy value between
+  # any two movies both users have seen and the number of movies they both rated. If the differences between the 
+  # ratings are 4, 3, 2, 1, 0, the added value for each is 0, 1, 2, 3, 4 respectively, so the higher the value, 
+  # the greater the similarity.
   def find_similarity(user1Hash, user2Hash)
     similarityValue = -1 # If no common movies watched, return -1
     countMovies = 0.0
