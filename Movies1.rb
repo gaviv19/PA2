@@ -1,8 +1,8 @@
-# January 23, 2015
+# February 9, 2015
 # cosi 105b, prof. Pito Salas
 # Aviv Glick
 #
-# (PA) Movies Part 1
+# (PA) Movies Part 1 / Movies Part 2
 #
 # This class arranges information about rated movies and extracts it from a database, based on the criteria:
 # User id, movie id, and rating.
@@ -37,7 +37,7 @@ class Movies1
   # returns the popularity of a given movie, whose value is (a + 2^r) - 1, where: 
   # a = the movie's average rating 
   # r = the ratio of the number of users who have rated the movie to the total number of users (always between 0 - 1).
-  # Thus, the popularity scale is 0 to 6, regardless of the number of users.
+  # Thus, the popularity scale is 1 to 5, regardless of the number of users.
   def popularity(movieId)
     return "ERROR: No such movie ID in the database" if @ratedMoviesHash["#{movieId}"].nil?
     return average(@ratedMoviesHash["#{movieId}"]) + (2 ** (@ratedMoviesHash["#{movieId}"].length / (@allUsersHash.keys.length).to_f)) - 1
@@ -117,8 +117,6 @@ class Movies1
     return similarUserHash.sort_by { |user, similarityValue| -similarityValue }
   end
 end
-
-
 
 
 
