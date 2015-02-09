@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class MovieData - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>MovieData.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-movies">#movies</a>
+    
+    <li ><a href="#method-i-predict">#predict</a>
+    
+    <li ><a href="#method-i-rating">#rating</a>
+    
+    <li ><a href="#method-i-run_test">#run_test</a>
+    
+    <li ><a href="#method-i-viewers">#viewers</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./ml-100k/u1_base.html">u1.base</a>
+  
+    <li class="file"><a href="./ml-100k/u1_test.html">u1.test</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./MovieData.html">MovieData</a>
+  
+    <li><a href="./MovieTest.html">MovieTest</a>
+  
+    <li><a href="./Movies1.html">Movies1</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class MovieData</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-resaults" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">resaults</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-testSet" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">testSet</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-trainingSet" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">trainingSet</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(trainingSet, testSet = nil)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File MovieData.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">trainingSet</span>, <span class="ruby-identifier">testSet</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-ivar">@USER_ID</span> = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@MOVIE_ID</span> = <span class="ruby-value">1</span> 
+  <span class="ruby-ivar">@RATING</span> = <span class="ruby-value">2</span>
+  <span class="ruby-ivar">@TIME_STAMP</span> = <span class="ruby-value">3</span>
+  <span class="ruby-ivar">@trainingSet</span> = <span class="ruby-constant">Movies1</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">trainingSet</span>)
+  <span class="ruby-ivar">@testSet</span> = <span class="ruby-constant">Movies1</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">testSet</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">testSet</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span> <span class="ruby-comment">#creating a testSet object is optional</span>
+  <span class="ruby-ivar">@resaults</span> = <span class="ruby-constant">Struct</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:userId</span>, <span class="ruby-value">:movieId</span>, <span class="ruby-value">:rating</span>, <span class="ruby-value">:prediction</span>) <span class="ruby-comment">#creating a Struct object to contain an item with info for statistical analysis</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-movies" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">movies</span><span
+            class="method-args">(u, set=@trainingSet)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>returns array of movies that user u has watched. Use the training set if
+none was passed</p>
+          
+          
+
+          
+          <div class="method-source-code" id="movies-source">
+            <pre><span class="ruby-comment"># File MovieData.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">movies</span>(<span class="ruby-identifier">u</span>, <span class="ruby-identifier">set</span>=<span class="ruby-ivar">@trainingSet</span>)
+  <span class="ruby-identifier">set</span>.<span class="ruby-identifier">allUsersHash</span>[<span class="ruby-node">&quot;#{u}&quot;</span>].<span class="ruby-identifier">keys</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">set</span>.<span class="ruby-identifier">allUsersHash</span>[<span class="ruby-node">&quot;#{u}&quot;</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- movies-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- movies-method -->
+
+    
+      <div id="method-i-predict" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">predict</span><span
+            class="method-args">(u, m)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>returns a floating point number between 1.0 and 5.0 as an estimate of what
+user u would rate movie m</p>
+          
+          
+
+          
+          <div class="method-source-code" id="predict-source">
+            <pre><span class="ruby-comment"># File MovieData.rb, line 45</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">predict</span>(<span class="ruby-identifier">u</span>, <span class="ruby-identifier">m</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@testSet</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">aveUserRating</span> = <span class="ruby-ivar">@testSet</span>.<span class="ruby-identifier">average</span>(<span class="ruby-ivar">@testSet</span>.<span class="ruby-identifier">allUsersHash</span>[<span class="ruby-node">&quot;#{u}&quot;</span>].<span class="ruby-identifier">values</span>) <span class="ruby-comment">#returns the average rating u gave all movies</span>
+    <span class="ruby-identifier">popularity</span> = <span class="ruby-ivar">@testSet</span>.<span class="ruby-identifier">popularity</span>(<span class="ruby-identifier">m</span>)
+    <span class="ruby-identifier">popularity</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">aveUserRating</span><span class="ruby-operator">*</span><span class="ruby-value">0.01</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- predict-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- predict-method -->
+
+    
+      <div id="method-i-rating" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">rating</span><span
+            class="method-args">(u, m)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>returns the rating user u gave to movie m in the Training set, and 0 if u
+did not rate m</p>
+          
+          
+
+          
+          <div class="method-source-code" id="rating-source">
+            <pre><span class="ruby-comment"># File MovieData.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">rating</span>(<span class="ruby-identifier">u</span>, <span class="ruby-identifier">m</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@trainingSet</span>.<span class="ruby-identifier">allUsersHash</span>[<span class="ruby-node">&quot;#{u}&quot;</span>][<span class="ruby-node">&quot;#{m}&quot;</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@trainingSet</span>.<span class="ruby-identifier">allUsersHash</span>[<span class="ruby-node">&quot;#{u}&quot;</span>][<span class="ruby-node">&quot;#{m}&quot;</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- rating-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- rating-method -->
+
+    
+      <div id="method-i-run_test" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">run_test</span><span
+            class="method-args">(k=nil)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>runs the predict(u, m) method on the first k ratings in the Test set, and
+returns a <a href="MovieTest.html">MovieTest</a> object containing the
+results. (Parameter k is optional, and if omitted, all of the tests will
+run.)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="run_test-source">
+            <pre><span class="ruby-comment"># File MovieData.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">run_test</span>(<span class="ruby-identifier">k</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">k</span> <span class="ruby-operator">||=</span> <span class="ruby-ivar">@testSet</span>.<span class="ruby-identifier">data</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-identifier">arr</span> = (<span class="ruby-ivar">@testSet</span>.<span class="ruby-identifier">data</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">k</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>]).<span class="ruby-identifier">collect</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+    <span class="ruby-ivar">@resaults</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">item</span>[<span class="ruby-ivar">@USER_ID</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">item</span>[<span class="ruby-ivar">@MOVIE_ID</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">item</span>[<span class="ruby-ivar">@RATING</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">predict</span>(<span class="ruby-identifier">item</span>[<span class="ruby-ivar">@USER_ID</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">item</span>[<span class="ruby-ivar">@MOVIE_ID</span>].<span class="ruby-identifier">to_i</span>))
+  <span class="ruby-keyword">end</span> 
+  <span class="ruby-constant">MovieTest</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">arr</span>)  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- run_test-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- run_test-method -->
+
+    
+      <div id="method-i-viewers" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">viewers</span><span
+            class="method-args">(m, set=@trainingSet)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>returns the array of users that have seen movie m. Use the training set if
+none was passed</p>
+          
+          
+
+          
+          <div class="method-source-code" id="viewers-source">
+            <pre><span class="ruby-comment"># File MovieData.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">viewers</span>(<span class="ruby-identifier">m</span>, <span class="ruby-identifier">set</span>=<span class="ruby-ivar">@trainingSet</span>)
+  (<span class="ruby-identifier">set</span>.<span class="ruby-identifier">data</span>.<span class="ruby-identifier">select</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">item</span>[<span class="ruby-ivar">@MOVIE_ID</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">m</span>}).<span class="ruby-identifier">collect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">item</span>[<span class="ruby-ivar">@USER_ID</span>].<span class="ruby-identifier">to_i</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- viewers-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- viewers-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

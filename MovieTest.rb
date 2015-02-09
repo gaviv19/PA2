@@ -6,12 +6,6 @@
 #
 # This class performs statistical analisys on a list of all the results of run_text(k), where each resault is a tuple,
 # containing the user, rated movie, rating and predicted rating.
-# Shall have the following methods:
-
-# 1. mean: returns the average prediction error (which should be close to zero)
-# 2. stddev: returns the standard deviation of the prediction error
-# 3. rms: returns the root mean square error of the prediction
-# 4. to_a: returns an array of the predictions in the form [user, movie, rating, predictedRating].
 
 
 class MovieTest
